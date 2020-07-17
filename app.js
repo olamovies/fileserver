@@ -854,12 +854,15 @@ function file_video(path) {
 	
 	<br>${playBtn}
 	<!-- Fixed label -->
-	<div class="mdui-textfield">
+	<div class="mdui-textfield" width="50%">
 	  <label class="mdui-textfield-label">Direct Download Link</label>
-	  <input class="mdui-textfield-input" id="copy-link" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}"/>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
+
+<br/><br/>
+
 <div class="mdui-divider-dark"></div>
 
 <center> <br/><br/>
@@ -873,6 +876,13 @@ function file_video(path) {
     copyToClipboard(url);
     mdui.snackbar('Copied To Clipboard!');
   });
+}
+
+
+function copyToClipboard() {
+    var textBox = document.getElementById("mvalue");
+    textBox.select();
+    document.execCommand("copy");
 }
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
