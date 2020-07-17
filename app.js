@@ -783,12 +783,13 @@ function file_video(path) {
 
           if(isSupports == true)
 
-          	content += `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
+          	content = content + `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
 
           else
 
-          content += `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
-  content += `
+          content = content + `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
+
+  content = content + `
           </div><br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
