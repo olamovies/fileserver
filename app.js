@@ -906,7 +906,7 @@ function file_video(path) {
 	<br>${playBtn}
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label" id="content">Direct Download Link</label>
+	  <label class="mdui-textfield-label">Direct Download Link</label>
 	  <input class="mdui-textfield-input" id="copy-link" type="text" value="${url}"/>
 	</div>
 </div>
