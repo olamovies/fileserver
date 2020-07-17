@@ -207,13 +207,6 @@ function list(path) {
 	 <div class="mdui-row mdui-color-theme-50">
 	 	<div style="font-size: 42px; font-weight: bold; text-align: center;"> File Server by OlaMovies.Top</div>
 	 </div>
-	 <div class="mdui-row">
-	  <ul id="list" class="mdui-list">
-	  </ul>
-	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Total <span class="number"></span> Item</div>
-	 </div>
-	  <div class="mdui-row"><div class="mdui-center mdui-text-center mdui-m-b-3 mdui-text-color-grey-600">&copy OlaMovies.Top - 2020</div></div>
-	 <div id="readme_md" class="mdui-typo" style="display:none; padding: 20px 0;"></div></duv>
 	`;
   $('#content').html(content);
 
@@ -773,11 +766,11 @@ function file_video(path) {
             <source src="${url}" type="video/mp4" size="648">
 <p class="vjs-no-js">
             <!-- Fallback for browsers that don't support the <video> element -->
-            Browser Don't Support Player <a href="${url}" download="">Download Instead</a>
+            Browser Don't Support Player or Disabled Javascript
             </p>
           </video>
           <br><br>
-          <span style="color: red;text-align: center;"> ** Any x265 (H265 Encoding) is not supported !! <a href="${url}" download>Download</a> & watch using your device</span>
+          <span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) is not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>
           </div><br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
@@ -785,8 +778,8 @@ function file_video(path) {
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
-    background: #111;
+    color: #111;
+    background: #fff;
     cursor: pointer;
     position: relative;
     z-index: 0;
