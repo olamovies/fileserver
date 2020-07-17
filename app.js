@@ -732,6 +732,8 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
+ var name = path.split('/').pop();
+ var ext = name.split('.').pop().toLowerCase();
   let player_items = [
     {
       text: 'MXPlayer(Free)',
