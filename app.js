@@ -332,15 +332,7 @@ function append_files_to_list(path, files) {
     item['modifiedTime'] = utc2beijing(item['modifiedTime']);
     item['size'] = formatFileSize(item['size']);
     if (item['mimeType'] == 'application/vnd.google-apps.folder') {
-      html += `<li class="mdui-list-item mdui-ripple"><a href="${p}" class="folder">
-	            <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
-	            <i class="mdui-icon material-icons">folder_open</i>
-	              ${item.name}
-	            </div>
-	            <div class="mdui-col-sm-3 mdui-text-right">${item['modifiedTime']}</div>
-	            <div class="mdui-col-sm-2 mdui-text-right">${item['size']}</div>
-	            </a>
-	        </li>`;
+      html += ``;
     } else {
       var p = path + item.name;
       const filepath = path + item.name;
@@ -361,26 +353,9 @@ function append_files_to_list(path, files) {
         targetFiles.push(filepath);
         p += "?a=view";
         c += " view";
-      }
-      html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="${p}" class="${c}" title="${item.name}">
-	          <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">`;
-	       
-	  if(ext == "mkv" || ext == "mp4")   
-	    html += `<i class="fa fa-file-movie-o" style="font-size:20px; margin: 2px"></i>`;
-	  else if(ext == "zip" || ext == "rar" || ext == "tar" || ext == "7z")   
-	    html += `<i class="fa fa-file-archive-o" style="font-size:20px; margin: 2px"></i>`;
-	  else
-	     html += `<i class="fa fa-file-o" style="font-size:20px; margin: 2px"></i>`;
+      }	          
 	          
-	          
-	          
-	          
-	           html +=` ${item.name}
-	          </div>
-	          <div class="mdui-col-sm-3 mdui-text-right">${item['modifiedTime']}</div>
-	          <div class="mdui-col-sm-2 mdui-text-right">${item['size']}</div>
-	          </a>
-	      </li>`;
+	         
     }
   }
 
@@ -507,10 +482,6 @@ function render_search_result_list() {
             }
             window.scroll_status.loading_lock = true;
 
-            // Show one loading spinner
-            $(`<div id="spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>`)
-              .insertBefore('#readme_md');
-            mdui.updateSpinners();
             // mdui.mutation();
 
             let $list = $('#list');
