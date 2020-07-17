@@ -210,8 +210,8 @@ function requestSearch(params, resultCallback) {
 function list(path) {
   var content = `
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
-	 <div class="mdui-row">
-	  File Server by OlaMovies.Top
+	 <div class="mdui-row mdui-color-theme-50">
+	 	<div style="font-size: 42px; font-weight: bold; text-align: center;"> File Server by OlaMovies.Top</div>
 	 </div>
 	 <div class="mdui-row">
 	  <ul id="list" class="mdui-list">
