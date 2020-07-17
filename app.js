@@ -860,14 +860,12 @@ function file_video(path) {
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
- <div class="addthis_inline_share_toolbox"></div>
    
 <center> <br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
 	 </div>
 </center>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0f231b72ef5b3f"></script>
 	`;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
