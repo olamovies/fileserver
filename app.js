@@ -732,8 +732,9 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
- var name = path.split('/').pop();
- var ext = name.split('.').pop().toLowerCase();
+ var name = path.split('/').pop().toLowerCase();
+ if(name.indexOf("x264")) 
+ 	var isSupports = true;
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -777,8 +778,17 @@ function file_video(path) {
 <script>
    var player = new Playerjs({id:"player", file:"${url}"});
 </script>
-          <br><br>
-          <span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) is not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>
+          <br><br>`;
+
+
+          if(${isSupports})
+
+          	content += `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
+
+          else
+
+          content += `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
+  content += `
           </div><br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
