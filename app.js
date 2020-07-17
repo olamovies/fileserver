@@ -881,6 +881,7 @@ function copyToClipboard() {
     var textBox = document.getElementById("mvalue");
     textBox.select();
     document.execCommand("copy");
+    mdui.snackbar('Copied To Clipboard!');
 }
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
