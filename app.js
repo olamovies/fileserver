@@ -204,9 +204,16 @@ function requestSearch(params, resultCallback) {
 function list(path) {
   var content = `
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
-	 <div class="mdui-row mdui-color-theme-50">
-	 	<div style="font-size: 42px; font-weight: bold; text-align: center;"> File Server by OlaMovies.Top</div>
+	 	 <div class="mdui-row">
+	 	<div class="mdui-typo-display-3-opacity">File Server by OlaMovies.Top</div>
+        <p> This is a simple project for sharing direct links of files. These files are 100% secure and provides superfast speed. You can copy the direct link from the download page and play in your device directly. It supports resume support and you can use link anywhere. Gives you the best speed according to your internet connection.</p>
+<img src="https://i.imgur.com/5FjOKUd.png" alt="Max Speed" width="60%" height="60%"/><p> Max Speed</p>
+<img src="https://i.imgur.com/4L86Mo9.png" alt="Links Sharing" width="60%" height="60%"/><p> Share Links to Friends</p>
+<img src="https://i.imgur.com/epBT295.png" alt="No Limits" width="60%" height="60%"/><p> No Limits! Download Unlimited Files at Once!</p>
+
+	 	</div>
 	 </div>
+</center>
 	`;
   $('#content').html(content);
 
@@ -778,8 +785,8 @@ function file_video(path) {
     height: 50px;
     border: none;
     outline: none;
-    color: #111;
-    background: #fff;
+    color: #fff;
+    background: #111;
     cursor: pointer;
     position: relative;
     z-index: 0;
