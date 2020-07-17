@@ -770,7 +770,8 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-<div id="player" style="mdui-shadow-18"></div>
+	<div class="mdui-shadow-24">
+<div id="player"></div></div>
 
 <script>
    var player = new Playerjs({id:"player", file:"${url}"});
@@ -848,7 +849,6 @@ function file_video(path) {
 }</style>
           </center>
           
-          <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
           
 	<br>
 	
