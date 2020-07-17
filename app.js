@@ -733,7 +733,7 @@ function copyToClipboard(str) {
 function file_video(path) {
  const url = window.location.origin + path;
  var name = path.split('/').pop().toLowerCase();
- if(name.indexOf("x264")) 
+ if(name.indexOf("x264") != -1) 
  	var isSupports = true;
   let player_items = [
     {
@@ -768,7 +768,7 @@ function file_video(path) {
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
 
-  const content = `
+  var content = `
   
 <div class="mdui-container-fluid">
 	<br>
@@ -781,7 +781,7 @@ function file_video(path) {
           <br><br>`;
 
 
-          if(isSupports)
+          if(isSupports == true)
 
           	content += `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
 
