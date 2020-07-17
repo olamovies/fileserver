@@ -268,11 +268,15 @@ function file_video(path){const url=window.location.origin+path;let player_items
 	  <label class="mdui-textfield-label">Direct Download Link</label>
 	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
 	</div>
+	<div class="mdui-textfield">
+	  <label class="mdui-textfield-label">Direct Download Link</label>
+	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="https://fs1.olamovies.workers.dev/0:${name}?a=view"/>
+	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
 <center> <div style="color: grey; font-size: 16px;margin-top: 50px; padding: 12px;">Powered by OlaMovies.Top - Created by Ola</div></center></div>
 	`;$('#content').html(content);$('#copy-link').on('click',()=>{copyToClipboard(url);mdui.snackbar('Copied To Clipboard!');});}
-	
+
 function copyToClipboard() {
     var textBox = document.getElementById("mvalue");
     textBox.select();
