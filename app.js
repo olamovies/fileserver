@@ -32,7 +32,7 @@ function init(){
         </div>`;
     }
 html += `
-    </header><div id="particles-js"><div id="content" class="mdui-container"> 
+    </header><div id="content" class="mdui-container"> 
         </div>
         `;
     $('body').html(html);
@@ -911,7 +911,7 @@ function file_video(path) {
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
-<center> <div style="color: grey; font-size: 16px;margin: 33px">Powered by OlaMovies.Top - Created by Ola</div></center></div>
+<center> <div style="color: grey; font-size: 16px;margin: 33px">Powered by OlaMovies.Top - Created by Ola</div></center>
 	`;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
