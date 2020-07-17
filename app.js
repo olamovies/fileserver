@@ -781,7 +781,7 @@ function file_video(path) {
           <br><br>`;
 
 
-          if(${isSupports})
+          if(isSupports)
 
           	content += `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
 
