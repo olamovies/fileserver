@@ -768,9 +768,7 @@ function file_video(path) {
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
 
-  var content = `
-  
-<div class="mdui-container-fluid">
+  var c1 = `<div class="mdui-container-fluid">
 	<br>
 	<center>
 <div id="player" style="mdui-shadow-18"></div>
@@ -781,15 +779,15 @@ function file_video(path) {
           <br><br>`;
 
 
-          if(isSupports == true)
+          if(isSupports)
 
-          	content = content + `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
+          	var c2 = `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
 
           else
 
-          content = content + `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
+          var c3 = `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
 
-  content = content + `
+  var c4 =`
           </div><br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
@@ -882,6 +880,8 @@ function file_video(path) {
 </center>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0f231b72ef5b3f"></script>
 	`;
+
+	var content = c1 + c2 + c3 + c4;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
     copyToClipboard(url);
