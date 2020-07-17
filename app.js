@@ -106,7 +106,7 @@ function nav(path) {
   var model = window.MODEL;
   var html = "";
   var cur = window.current_drive_order || 0;
-  html += `<a href="/${cur}:/" class="mdui-typo-headline folder">${document.siteName} Files</a>`;
+  html += `<a href="/${cur}:/" class="mdui-typo-headline folder">${document.siteName}</a>`;
   var names = window.drive_names;
   /*html += `<button class="mdui-btn mdui-btn-raised" mdui-menu="{target: '#drive-names'}"><i class="mdui-icon mdui-icon-left material-icons">share</i> ${names[cur]}</button>`;
   html += `<ul class="mdui-menu" id="drive-names" style="transform-origin: 0px 0px; position: fixed;">`;
