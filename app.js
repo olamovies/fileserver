@@ -215,8 +215,9 @@ function list(path) {
 <img class="mdui-img-fluid" src="https://i.imgur.com/5FjOKUd.png" alt="Max Speed" width="50%" height="50%"/><p> Max Speed</p>
 <img class="mdui-img-fluid" src="https://i.imgur.com/4L86Mo9.png" alt="Links Sharing" width="50%" height="50%"/><p> Share Links to Friends</p>
 <img class="mdui-img-fluid" src="https://i.imgur.com/epBT295.png" alt="No Limits" width="50%" height="50%"/><p> No Limits! Download Unlimited Files at Once!</p>
-</div> 	</div>
-	 </div><br/><br/>
+</div> 	
+</div>
+<br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
 	 </div>
@@ -759,7 +760,7 @@ function file_video(path) {
                    <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;
   const playBtn = `
      <center> <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
-        <i class="mdui-icon material-icons">&#xe039;</i>Play From External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
+        <i class="mdui-icon material-icons">&#xe039;</i>Open With<i class="mdui-icon material-icons">&#xe5cf;</i>
       </button>
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
@@ -769,20 +770,11 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-<video id="my-video"
-    class="video-js vjs-theme-fantasy vjs-fluid"
-    controls
-    preload="none"
-    poster=""
-    data-setup="{}"
-  >
-            <!-- Video files -->
-            <source src="${url}" type="video/mp4" size="648">
-<p class="vjs-no-js">
-            <!-- Fallback for browsers that don't support the <video> element -->
-            Browser Don't Support Player or Disabled Javascript
-            </p>
-          </video>
+<div id="player"></div>
+
+<script>
+   var player = new Playerjs({id:"player", file:"${url}"});
+</script>
           <br><br>
           <span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) is not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>
           </div><br/><br/>
