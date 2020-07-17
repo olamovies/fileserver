@@ -115,12 +115,7 @@ function nav(path) {
   });
   html += `</ul>`;*/
 
-  // change into select
-  html += `<select class="mdui-select" onchange="window.location.href=this.value" mdui-select style="overflow:visible;padding-left:8px;padding-right:8px">`;
-  names.forEach((name, idx) => {
-    html += `<option value="/${idx}:/"  ${idx === cur ? 'selected="selected"' : ''} >${name}</option>`;
-  });
-  html += `</select>`;
+
 
   if (!model.is_search_page) {
     var arr = path.trim('/').split('/');
