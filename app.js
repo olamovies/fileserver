@@ -732,7 +732,7 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
- var name = path.split('/').pop().toLowerCase();
+ var name = path.split('/').pop();
  if(name.indexOf("x264") != -1) 
  	var isSupports = true;
   let player_items = [
