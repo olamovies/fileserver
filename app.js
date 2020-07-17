@@ -770,7 +770,7 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-<div id="player"></div>
+<div id="player" style="mdui-shadow-18"></div>
 
 <script>
    var player = new Playerjs({id:"player", file:"${url}"});
@@ -860,7 +860,13 @@ function file_video(path) {
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
-<center> <div style="color: grey; font-size: 16px;margin: 33px">Powered by OlaMovies.Top - Created by Ola</div></center>
+<div class="mdui-divider-dark"></div>
+
+<center> <br/><br/>
+	 <div class="footers">
+	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
+	 </div>
+</center>
 	`;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
