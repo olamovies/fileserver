@@ -732,9 +732,6 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
- var name = path.split('/').pop();
- if(name.indexOf("x264") != -1) 
- 	var isSupports = true;
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -768,7 +765,9 @@ function file_video(path) {
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
 
-  var c1 = `<div class="mdui-container-fluid">
+  const content = `
+  
+<div class="mdui-container-fluid">
 	<br>
 	<center>
 <div id="player" style="mdui-shadow-18"></div>
@@ -776,18 +775,8 @@ function file_video(path) {
 <script>
    var player = new Playerjs({id:"player", file:"${url}"});
 </script>
-          <br><br>`;
-
-
-          if(isSupports)
-
-          	var c2 = `<span style="color: green;text-align: center;"> ** Playing x264 (H264 Encoding) is supported in online!!</span>`;
-
-          else
-
-          var c3 = `<span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) may not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>`;
-
-  var c4 =`
+          <br><br>
+          <span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) is not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>
           </div><br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
@@ -872,7 +861,7 @@ function file_video(path) {
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
  <div class="addthis_inline_share_toolbox"></div>
-        ${ext}
+   
 <center> <br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
@@ -880,8 +869,6 @@ function file_video(path) {
 </center>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0f231b72ef5b3f"></script>
 	`;
-
-	var content = c1 + c2 + c3 + c4;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
     copyToClipboard(url);
