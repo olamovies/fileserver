@@ -206,13 +206,17 @@ function list(path) {
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 	<center>
 	 	 <div class="mdui-row">
-	 	<div class="mdui-typo-display-3-opacity mdui-text-color-purple">File Server by OlaMovies.Top</div>
-        <div class="mdui-typo-subheading-1-opacity"> This is a simple project for sharing direct links of files. These files are 100% secure and provides superfast speed. You can copy the direct link from the download page and play in your device directly. It supports resume support and you can use link anywhere. Gives you the best speed according to your internet connection.</p>
+	 	<div class="mdui-typo-display-3-opacity mdui-text-color-purple mdui-m-t-1">File Server by OlaMovies.Top</div>
+        <div class="mdui-typo-subheading-opacity"> This is a simple project for sharing direct links of files. These files are 100% secure and provides superfast speed. You can copy the direct link from the download page and play in your device directly. It supports resume support and you can use link anywhere. Gives you the best speed according to your internet connection.</p>
 <img src="https://i.imgur.com/5FjOKUd.png" alt="Max Speed" width="50%" height="50%"/><p> Max Speed</p>
 <img src="https://i.imgur.com/4L86Mo9.png" alt="Links Sharing" width="50%" height="50%"/><p> Share Links to Friends</p>
 <img src="https://i.imgur.com/epBT295.png" alt="No Limits" width="50%" height="50%"/><p> No Limits! Download Unlimited Files at Once!</p>
+</div> 	</div>
+	 </div>
+	 <div class="mdui-row">
+	 <div class="footers">
+	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
 </div>
-	 	</div>
 	 </div>
 </center>
 	`;
