@@ -861,7 +861,7 @@ function file_video(path) {
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
  <div class="addthis_inline_share_toolbox"></div>
-        
+        ${ext}
 <center> <br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
