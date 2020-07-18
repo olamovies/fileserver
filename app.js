@@ -160,7 +160,10 @@ function file_code(path){var type={"html":"html","php":"php","css":"css","go":"g
 	`;$('#content').html(content);$.get(path,function(data){$('#editor').html($('<div/>').text(data).html());var code_type="Text";if(type[ext]!=undefined){code_type=type[ext];}
 var editor=ace.edit("editor");editor.setTheme("ace/theme/ambiance");editor.setFontSize(18);editor.session.setMode("ace/mode/"+code_type);editor.setOptions({enableBasicAutocompletion:true,enableSnippets:true,enableLiveAutocompletion:true,maxLines:Infinity});});}
 function copyToClipboard(str){const $temp=$("<input>");$("body").append($temp);$temp.val(str).select();document.execCommand("copy");$temp.remove();}
-function file_video(path){const url=window.location.origin+path;let player_items=[{text:'MXPlayer(Free)',href:`intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end`,},{text:'MXPlayer(Pro)',href:`intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end`,},{text:'nPlayer',href:`nplayer-${url}`,},{text:'VLC',href:`vlc://${url}`,},{text:'PotPlayer',href:`potplayer://${url}`}].map(it=>`<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`).join('');player_items+=`<li class="mdui-divider"></li>
+function file_video(path){const url=window.location.origin+path;let player_items=[{text:'MXPlayer(Free)',href:`intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end`,},{text:'MXPlayer(Pro)',href:`intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end`,},{text:'nPlayer',href:`nplayer-${url}`,},{text:'VLC',href:`vlc://${url}`,},{text:'PotPlayer',href:`potplayer://${url}`}].map(it=>`<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`).join('');
+
+var name=path.split('/').pop();
+player_items+=`<li class="mdui-divider"></li>
                    <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;const playBtn=`
      <center> <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
         <i class="mdui-icon material-icons">&#xe039;</i>Play From External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
@@ -265,11 +268,11 @@ function file_video(path){const url=window.location.origin+path;let player_items
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Files Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
+	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${name}?a=view"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">FS1 Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="https://fs1.olamovies.workers.dev/0:${name}?a=view"/>
+	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
