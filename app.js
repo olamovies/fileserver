@@ -179,7 +179,7 @@ function file_video(path){const url=window.location.origin+path;let player_items
     data-setup="{}"
   >
             <!-- Video files -->
-            <source src="${url}" type="video/mp4" size="648">
+            <source src="${url}" type="video/mp4" size="320">
 <p class="vjs-no-js">
             <!-- Fallback for browsers that don't support the <video> element -->
             Browser Don't Support Player <a href="${url}" download="">Download Instead</a>
@@ -258,18 +258,17 @@ function file_video(path){const url=window.location.origin+path;let player_items
 }</style>
           </center>
           
-          <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
           
 	<br>
 	
-	<br>${playBtn}
+	<br>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Direct Download Link</label>
+	  <label class="mdui-textfield-label">Files Download Link</label>
 	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
 	</div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Direct Download Link</label>
+	  <label class="mdui-textfield-label">FS1 Download Link</label>
 	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="https://fs1.olamovies.workers.dev/0:${name}?a=view"/>
 	</div>
 </div>
