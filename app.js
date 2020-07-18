@@ -274,6 +274,7 @@ player_items+=`<li class="mdui-divider"></li>
 	  <label class="mdui-textfield-label">Files Download Link</label>
 	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="https://files.olamovies.top/0:/${name}?a=view"/>
 	</div>
+	<br>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
 <center> <div style="color: grey; font-size: 16px;margin-top: 50px; padding: 12px;">Powered by OlaMovies.Top - Created by Ola</div></center></div>
