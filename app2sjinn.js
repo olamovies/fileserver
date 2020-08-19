@@ -268,7 +268,7 @@ player_items+=`<li class="mdui-divider"></li>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Ola Sjinn Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue2" onclick="copyToClipboard2()" type="text" value="https://ola.sjinn.workers.dev/0:/${name}?a=view"/>
+	  <input class="mdui-textfield-input" id="mvalue2" onclick="copyToClipboard2()" type="text" value="https://ola.sjinn.workers.dev${name}?a=view"/>
 	</div>
 	<br>
 </div>
