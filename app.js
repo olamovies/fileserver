@@ -169,7 +169,9 @@ player_items+=`<li class="mdui-divider"></li>
         <i class="mdui-icon material-icons">&#xe039;</i>Play From External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
       </button>
       
-      <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;const content=`
+      <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
+
+      const content=`
   
 <br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
