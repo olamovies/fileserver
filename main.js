@@ -211,8 +211,17 @@ function list(path) {
         <div class="mdui-typo-subheading-opacity"> This is a simple project for sharing direct links of files. These files are 100% secure and provides superfast speed. 
         You can copy the direct link from the download page and play in your device directly. It supports resume support and you can use link anywhere. 
         Gives you the best speed according to your internet connection.</div>
-        </div>
+        <br/><br/>
+         <h4>Facing below issue?</h4>
+    <img src="https://i.imgur.com/MgZHjti.png" alt="Quota Exceeded Problem"/>
+    <center><p style="color: red; width: 70%;"><b>Solution:</b>  Please try after some hours. Basically the quota resets after 24 hours. There is a limited quota of 750GB transfer per day. If the quota exceeded, try after 4/5 hours!!
+   </p><a href="https://blog.olamovies.top/download-quota-exceeded-direct-links-drive">Read our Blog: Direct Links - DownloadQuotaExceeded Problem!!</a></center>
+  <br/>
+  <p style="border: 1.4px dashed grey; padding: 19px; margin: 4px 12px 4px 12px;"> Available Servers: <span class="w3-purple w3-badge">5</span><br/> 
+  <span style="font-size: 13px; color: gray;">** Other Servers are hidden for Security Reasons! Only appears if all above servers are down.</p>
+  <p>Server Reboots/Resets it's limits after 24 hours. If all servers are down please visit after 1 day!</span></p><br>
 <br/><br/>
+</div>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
 	 </div>
