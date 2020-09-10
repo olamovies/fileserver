@@ -211,12 +211,7 @@ function list(path) {
         <div class="mdui-typo-subheading-opacity"> This is a simple project for sharing direct links of files. These files are 100% secure and provides superfast speed. 
         You can copy the direct link from the download page and play in your device directly. It supports resume support and you can use link anywhere. 
         Gives you the best speed according to your internet connection.</div>
-                <div class="mdui-typo-title-opacity">
-<img class="mdui-img-fluid" src="https://i.imgur.com/5FjOKUd.png" alt="Max Speed" width="50%" height="50%"/><p> Max Speed</p>
-<img class="mdui-img-fluid" src="https://i.imgur.com/4L86Mo9.png" alt="Links Sharing" width="50%" height="50%"/><p> Share Links to Friends</p>
-<img class="mdui-img-fluid" src="https://i.imgur.com/epBT295.png" alt="No Limits" width="50%" height="50%"/><p> No Limits! Download Unlimited Files at Once!</p>
-</div> 	
-</div>
+        </div>
 <br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
