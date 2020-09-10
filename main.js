@@ -766,7 +766,7 @@ function file_video(path) {
       </button>
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
-
+  var name = path.split('/').pop();
   const content = `
   
 <div class="mdui-container-fluid">
