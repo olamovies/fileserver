@@ -772,7 +772,7 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-	<div class="mdui-shadow-24" style="padding: 7px; word-wrap: break-word;"> <b>File Name:</b> ${name} <br/>
+	<div class="mdui-shadow-24" style="padding: 7px; word-wrap: break-word;"> <b>File Name:</b> ${name}
 </div>
           <br><br>
           </div><br/><br/>
