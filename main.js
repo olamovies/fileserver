@@ -776,7 +776,7 @@ function file_video(path) {
 	<div class="mdui-shadow-24" style="padding: 13px; word-wrap: break-word;"> <big><b>File Name</b></big><br><br> ${name1}
 </div>
           <br><br>
-          </div><br/><br/>
+          </div><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover blink" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
     width: 220px;
@@ -852,10 +852,6 @@ function file_video(path) {
 	
 	<br>${playBtn}
 	<!-- Fixed label -->
-	<div class="mdui-textfield" width="50%">
-	  <label class="mdui-textfield-label">Share Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
-	</div>
 </div>
 <center> <br/><br/>
 	 <div class="footers">
