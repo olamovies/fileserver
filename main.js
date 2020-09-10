@@ -772,16 +772,11 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-	<div class="mdui-shadow-24">
-<div id="player"></div></div>
-
-<script>
-   var player = new Playerjs({id:"player", file:"${url}"});
-</script>
+	<div class="mdui-shadow-24"> ${name}
+</div>
           <br><br>
-          <span style="color: red;text-align: center;"> ** Playing x265 (H265 Encoding) is not supported in some browser!! <a href="${url}" download>Download</a> & watch using your device</span>
           </div><br/><br/>
-         <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
+         <center> <div> <a href="${url}"><button class="glow-on-hover blink" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
     width: 220px;
     height: 50px;
@@ -861,8 +856,6 @@ function file_video(path) {
 	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="${url}?a=view"/>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
-   
 <center> <br/><br/>
 	 <div class="footers">
 	<h2>&copy; 2020 - A project of <a href="http://olamovies.top/">OlaMovies.Top</a></h2>
