@@ -766,13 +766,14 @@ function file_video(path) {
       </button>
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;
-  var name = path.split('/').pop().replace("%20", " ");
+  var name = path.split('/').pop();
+     name = name.replace("%20", " ");
   const content = `
   
 <div class="mdui-container-fluid">
 	<br>
 	<center>
-	<div class="mdui-shadow-24" style="padding: 7px; word-wrap: break-word;"> <b>File Name:</b> ${name}
+	<div class="mdui-shadow-24" style="padding: 13px; word-wrap: break-word;"> <big><b>File Name</b></big><br> ${name}
 </div>
           <br><br>
           </div><br/><br/>
