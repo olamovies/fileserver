@@ -73,7 +73,7 @@ item['modifiedTime']=utc2beijing(item['modifiedTime']);item['size']=formatFileSi
 	        </li>`;}else{var p=path+item.name;const filepath=path+item.name;var c="file";if(is_lastpage_loaded&&item.name=="README.md"){get_file(p,item,function(data){markdown("#readme_md",data);});}
 if(item.name=="HEAD.md"){get_file(p,item,function(data){markdown("#head_md",data);});}
 var ext=p.split('.').pop().toLowerCase();if("|html|php|css|go|java|js|json|txt|sh|md|mp4|webm|avi|bmp|jpg|jpeg|png|gif|m4a|mp3|flac|wav|ogg|mpg|mpeg|mkv|rm|rmvb|mov|wmv|asf|ts|flv|pdf|".indexOf(`|${ext}|`)>=0){targetFiles.push(filepath);p+="?a=view";c+=" view";}
-html+=`<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="hello${p}" class="${c}" title="${item.name}">
+html+=`<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="${p}" class="${c}" title="${item.name}">
 	          <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">`;if(ext=="mkv"||ext=="mp4")
 html+=`<i class="fa fa-file-movie-o" style="font-size:20px; margin: 2px"></i>`;else if(ext=="zip"||ext=="rar"||ext=="tar"||ext=="7z")
 html+=`<i class="fa fa-file-archive-o" style="font-size:20px; margin: 2px"></i>`;else
@@ -171,26 +171,7 @@ player_items+=`<li class="mdui-divider"></li>
       
       <ul class="mdui-menu" id="player-items">${player_items}</ul></center>`;const content=`
   
-<div class="mdui-container-fluid">
-	<br>
-	<center>
-<video id="my-video"
-    class="video-js vjs-theme-fantasy vjs-fluid"
-    controls
-    preload="none"
-    poster=""
-    data-setup="{}"
-  >
-            <!-- Video files -->
-            <source src="${url}" type="video/mp4" size="320">
-<p class="vjs-no-js">
-            <!-- Fallback for browsers that don't support the <video> element -->
-            Browser Don't Support Player <a href="${url}" download="">Download Instead</a>
-            </p>
-          </video>
-          <br><br>
-          <span style="color: red;text-align: center;"> ** Any x265 (H265 Encoding) is not supported !! <a href="${url}" download>Download</a> & watch using your device</span>
-          </div><br/><br/>
+<br/><br/>
          <center> <div> <a href="${url}"><button class="glow-on-hover" type="button">Download Now</button></a> </div></center>
           <style>.glow-on-hover {
     width: 220px;
@@ -267,16 +248,11 @@ player_items+=`<li class="mdui-divider"></li>
 	<br>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">FS1 Download Link</label>
+	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" id="mvalue2" onclick="copyToClipboard2()" type="text" value="https://s1.olamovies.workers.dev/0:/${name}?a=view"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Files Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue" onclick="copyToClipboard()" type="text" value="https://files.olamovies.top/0:/${name}?a=view"/>
 	</div>
 	<br>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent blink"><i class="mdui-icon material-icons">file_download</i></a>
 <center> <div style="color: grey; font-size: 16px;margin-top: 50px; padding: 12px;">Powered by OlaMovies.Top - Created by Ola</div></center></div>
 	`;$('#content').html(content);$('#copy-link').on('click',()=>{copyToClipboard(url);mdui.snackbar('Copied To Clipboard!');});}
 
