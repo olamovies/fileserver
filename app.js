@@ -268,7 +268,7 @@ player_items+=`<li class="mdui-divider"></li>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">FS1 Download Link</label>
-	  <input class="mdui-textfield-input" id="mvalue2" onclick="copyToClipboard2()" type="text" value="https://fs1.olamovies.workers.dev/0:/${name}?a=view"/>
+	  <input class="mdui-textfield-input" id="mvalue2" onclick="copyToClipboard2()" type="text" value="https://s1.olamovies.workers.dev/0:/${name}?a=view"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Files Download Link</label>
