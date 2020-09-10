@@ -215,10 +215,8 @@ function list(path) {
          <h4>Facing below issue?</h4>
     <img src="https://i.imgur.com/MgZHjti.png" alt="Quota Exceeded Problem"/>
     <center><p style="color: red; width: 70%;"><b>Solution:</b>  Please try after some hours. Basically the quota resets after 24 hours. There is a limited quota of 750GB transfer per day. If the quota exceeded, try after 4/5 hours!!
-   </p><a href="https://blog.olamovies.top/download-quota-exceeded-direct-links-drive">Read our Blog: Direct Links - DownloadQuotaExceeded Problem!!</a></center>
+   </p></center>
   <br/>
-  <p style="border: 1.4px dashed grey; padding: 19px; margin: 4px 12px 4px 12px;"> Available Servers: <span class="w3-purple w3-badge">5</span><br/> 
-  <span style="font-size: 13px; color: gray;">** Other Servers are hidden for Security Reasons! Only appears if all above servers are down.</p>
   <p>Server Reboots/Resets it's limits after 24 hours. If all servers are down please visit after 1 day!</span></p><br>
 <br/><br/>
 </div>
